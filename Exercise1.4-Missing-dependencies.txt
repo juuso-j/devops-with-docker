@@ -1,0 +1,13 @@
+docker run -d -it --name website ubuntu sh -c 'echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'
+docker exec -it website bash
+Inside the Container:
+apt-get update
+apt-get install curl
+exit
+------
+Finally:
+docker attach website
+
+Note:
+apt-get did not find curl without first executing:
+apt-get update

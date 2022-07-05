@@ -1,0 +1,1 @@
+docker run -v "$(pwd):/logs" --name web-service devopsdockeruh/simple-web-service server

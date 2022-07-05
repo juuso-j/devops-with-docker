@@ -1,0 +1,3 @@
+docker run -it devopsdockeruh/pull_exercise
+From the README.md in the repository I found the password and the secret message is:
+"This is the secret message"
